@@ -1,161 +1,360 @@
-<!DOCTYPE HTML>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Personal Portfolio</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="assets/css/style.css">
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>Personal Portfolio</title>
+  <meta name="description" content="Personal Portfolio" />
 </head>
 
-<body class="is-preload">
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img src="assets/profile.png" alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Mitchel A Mugono</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact"> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
 
-	<!-- Wrapper-->
-	<div id="wrapper">
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<a href="#" class="icon solid fa-home"><span>Home</span></a>
-			<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
-			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-		</nav>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
 
-		<!-- Main -->
-		<div id="main">
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div>
+  <!---->
 
-			<!-- Me -->
-			<article id="home" class="panel intro">
-				<header>
-					<h1>Mitchel Mugono</h1>
-					<p>Junior Web Developer</p>
-				</header>
-				<div class="socials">
-					<a href="https://github.com/Mystic-Mish" target="_blank">GitHub</a>
-					<a href="https://www.linkedin.com/in/mitchel-a-35231524a/" target="_blank">LinkedIn</a>
-					<a href="https://codepen.io/mumiakmitch" target="_blank">Codepen</a>
-				</div>
-				<a href="#work" class="jumplink pic">
-					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-					<img src="img/profile.png" alt="My professional photo" />
-				</a>
-			</article>
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Hello, welcome.</span>
+          <span class="heading-primary__main">
+            I'm Mitchel A Mugono! A Web Developer Building Interractive Websites and WebApps while considering
+            usability,
+            interractivity and maintainability.
+          </span>
+        </h1>
+        <button class="btn btn-theme home-hero__btn-theme"><a href="./index.html#projects">Projects</a></button>
+        <button class="btn btn-inv home-hero__btn-theme"><a href="./index.html#contact">Contact</a></button>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About Me</span>
+        <span class="heading-secondary__main">
+          Get To Know Me More.
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Story
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                I started my programming journey in 2021 and so far I think I can refer to myself as a junior developer.
+              </span>
+              <span>
+                Learning is a continuous process and with the everyday emerging and changing technology I strive to keep
+                myself updated and it has helped to strengthen my grit mindset.
+              </span>
+              <span>
+                All of the project are personal project and am still updating them while looking for prospective clients
+                or maybe I have found one, you. Feel free to contact me we work together.
+              </span>
+            </p>
+            <button class="btn btn-theme about__btn-theme"><a href="./index.html#projects"> Projects </a></button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              My Skills
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">html</li>
+              <li class="about__skill">css</li>
+              <li class="about__skill">javascript</li>
+              <li class="about__skill">react</li>
+              <li class="about__skill">node</li>
+              <li class="about__skill">git</li>
+              <li class="about__skill">vscode</li>
+              <li class="about__skill">php</li>
+              <li class="about__skill">github</li>
+              <li class="about__skill">bootstrap</li>
+              <li class="about__skill">wordpress</li>
+              <li class="about__skill">joomla</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects</span>
+        <span class="heading-secondary__main">
+          Here you will find some of the projects I have been able to work on.
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/grains.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                E-commerce Website
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
 
-			<!-- Work -->
-			<article id="work" class="panel">
-				<header>
-					<h2>Work</h2>
-				</header>
-				<p>Below are some of the works I have been able to accomplish ever since I ventured into the tech world:
-				</p>
-				<section>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://codepen.io/mumiakmitch/full/PoyLGdE" class="image fit" target="_blank"><img
-									src="img/calculator.jpg" alt="Calculator program">Calculator</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/cereal_shop/" class="image fit" target="_blank"><img
-									src="img/grains.jpg" alt="Cereal shop website">Cereal Shop</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/sports_website/" class="image fit"
-								target="_blank"><img src="img/sports.jpg" alt="Sports Website">Sports Webpage</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/web_tech/" class="image fit" target="_blank"><img
-									src="img/web.jpg" alt="Web development learning site">Web Development School</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://codepen.io/mumiakmitch/full/NWLbEdJ" class="image fit" target="_blank"><img
-									src="img/quote.jpg" alt="Random quote generator">Random Quote Generator</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://codepen.io/mumiakmitch/full/QWVGJpX" class="image fit" target="_blank"><img
-									src="img/markdown.jpg" alt="Markdown previewer">Markdown Previewer</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/book_library/" class="image fit" target="_blank"><img
-									src="img/library.jpg" alt="Book Library">Book Library</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/flight_book_clone/" class="image fit"
-								target="_blank"><img src="img/flight.jpg" alt="Flight Booking UI Clone">Flight Booking
-								UI Clone</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/manual-chatbot/" class="image fit"
-								target="_blank"><img src="img/bot.jpg" alt="Manual ChatBot">Manual ChatBot</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://basketball-academy-gold.vercel.app/" class="image fit" target="_blank"><img
-									src="img/bake.jpg" alt="Basketball Academy UI">Basketball Academy UI</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://portfolio-template-gules-omega.vercel.app/" class="image fit"
-								target="_blank"><img src="img/website.jpg" alt="Portfolio Website Template">Portfolio
-								Website Template</a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="https://mystic-mish.github.io/sports_website_full/" class="image fit"
-								target="_blank"><img src="img/sports.jpg" alt="Sports Website">Sports
-								Website</a>
-						</div>
-					</div>
-				</section>
-			</article>
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  This is an E-commerce website simply for ordering cereals and grains.
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  It has been built using HTML, CSS, JS and PHP
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                <a href="https://mystic-mish.github.io/cereal_shop/"> Live Link </a>
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/Mystic-Mish/cereal_shop"> Code Link </a>
+              </button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/sports.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Sports Website
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
 
-			<!-- Contact -->
-			<article id="contact" class="panel">
-				<header>
-					<h2>Contact Me</h2>
-				</header>
-				<form action="#" method="post">
-					<div>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-medium">
-								<input type="text" name="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<input type="text" name="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" placeholder="Message" rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<input type="submit" value="Send Message" />
-							</div>
-						</div>
-					</div>
-				</form>
-			</article>
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  This a website for sports. It can be customized to tailor the needs of an institution,
+                  organization e.t.c
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  Technologies used include HTML, CSS and JS.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                <a href="https://mystic-mish.github.io/sports_website_full/"> Live Link </a>
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/Mystic-Mish/sports_website_full"> Code Link </a>
+              </button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/website.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Portfolio Template
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
 
-		</div>
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  This is a portfolio template created using react JS.
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  It can be customized to meet any users need regardless of their career line.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                <a href="https://portfolio-template-gules-omega.vercel.app/"> Live Link </a>
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/Mystic-Mish/portfolio"> Code Link </a>
+              </button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/web.jpg" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Web Technology
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
 
-		<!-- Footer -->
-		<div id="footer">
-			<ul class="copyright">
-				<li>&copy; Personal Portfolio</li>
-				<li>Web Developer: <a href="github.com/Mystic-Mish">MUMIAK</a></li>
-			</ul>
-		</div>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  A site that contains basic information and links to useful websites for information on web technologies.
+                </span>
+                <!-- <br />
+                  <br /> -->
+                <span>
+                  More updates coming soon.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                <a href="https://mystic-mish.github.io/web_tech/"> Live Link </a>
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/Mystic-Mish/web_tech"> Code Link </a>
+              </button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact </span>
+        <span class="heading-secondary__main">
+          Feel free to Contact me and I will get back to you as soon as possible
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="contact__form-cont">
+          <form class="contact__form">
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Name</label>
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Email</label>
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+            </div>
+            <div class="contact__form-field">
+              <label for="name" class="contact__form-field-label">Message</label>
+              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
+                class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+          </form>
+          <div class="contact__form-visual"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="https://github.com/Mystic-Mish" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <a href="https://ke.linkedin.com/in/mitchel-m-35231524a" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/Mystic-Mish">Mumiak</a> | Web Development Portfolio
+          <script>document.write(new Date().getFullYear())</script>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>
