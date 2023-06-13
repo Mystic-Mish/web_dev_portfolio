@@ -5,13 +5,19 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
   <title>Personal Portfolio</title>
   <meta name="description" content="Personal Portfolio" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('u5TY1kMVwQAzSeP74');
+    })();
+  </script>
 </head>
 
 <body>
@@ -20,7 +26,7 @@
       <div class="main-header__logo-img-cont">
         <img src="assets/profile.png" alt="logo Image" class="main-header__logo-img" />
       </div>
-      <h4 class="main-header__logo-text">Mitchel A Mugono</h4>
+      <h4 class="main-header__logo-text">Mitchel Akoth</h4>
     </div>
     <nav class="main-header__navigation">
       <ul class="main-header__navigation-links">
@@ -60,11 +66,11 @@
   </header>
 
   <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
-  <div class="themeClrSelector">
+  <!--<div class="themeClrSelector">
     <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
     <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
       class="themeClrSelector__img" />
-  </div>
+  </div>-->
   <!---->
 
   <section id="home-hero" class="home-hero">
@@ -73,7 +79,7 @@
         <h1 class="heading-primary home-hero__heading-primary">
           <span class="heading-primary__sm"> Hello, welcome.</span>
           <span class="heading-primary__main">
-            I'm Mitchel A Mugono! A Web Developer Building Interractive Websites and WebApps while considering
+            I'm Mitchel Akoth! A Web Developer Building Interractive Websites and WebApps while considering
             usability,
             interractivity and maintainability.
           </span>
@@ -105,8 +111,7 @@
                 myself updated and it has helped to strengthen my grit mindset.
               </span>
               <span>
-                All of the project are personal project and am still updating them while looking for prospective clients
-                or maybe I have found one, you. Feel free to contact me we work together.
+                Feel free to contact me we work together.
               </span>
             </p>
             <button class="btn btn-theme about__btn-theme"><a href="./index.html#projects"> Projects </a></button>
@@ -139,44 +144,12 @@
       <h2 class="heading-secondary projects__heading-secondary">
         <span class="heading-secondary__sm"> Projects</span>
         <span class="heading-secondary__main">
-          Here you will find some of the projects I have been able to work on.
+          Some of the projects I have been able to work on!
         </span>
       </h2>
       <div class="main-section__content">
         <div class="projects__list">
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 1 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/grains.jpg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                E-commerce Website
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
 
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  This is an E-commerce website simply for ordering cereals and grains.
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  It has been built using HTML, CSS, JS and PHP
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a href="https://mystic-mish.github.io/cereal_shop/"> Live Link </a>
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/cereal_shop"> Code Link </a>
-              </button>
-            </div>
-          </div>
           <div class="projects__list-item projects__list-item--inv">
             <div class="projects__list-item-details">
               <div class="projects__list-item-img-cont">
@@ -189,8 +162,7 @@
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  This a website for sports. It can be customized to tailor the needs of an institution,
-                  organization e.t.c
+                  This a website for the sports department.
                 </span>
                 <!-- <br />
                   <br /> -->
@@ -199,21 +171,21 @@
                 </span>
               </p>
               <button class="btn btn-theme projects__btn-theme">
-                <a href="https://mystic-mish.github.io/sports_website_full/"> Live Link </a>
+                <a href="https://mystic-mish.github.io/sports-website/" target="_blank"> Live Link </a>
               </button>
               <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/sports_website_full"> Code Link </a>
+                <a href="https://github.com/Mystic-Mish/sports-website" target="_blank"> Code Link </a>
               </button>
             </div>
             <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-num"> 1 </span>
               <span class="projects__list-item-count-line"> </span>
               <span class="projects__list-item-count-end-dot"> </span>
             </div>
           </div>
           <div class="projects__list-item">
             <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-num"> 2 </span>
               <span class="projects__list-item-count-line"> </span>
               <span class="projects__list-item-count-end-dot"> </span>
             </div>
@@ -237,10 +209,10 @@
                 </span>
               </p>
               <button class="btn btn-theme projects__btn-theme">
-                <a href="https://portfolio-template-gules-omega.vercel.app/"> Live Link </a>
+                <a href="https://portfolio-template-gules-omega.vercel.app/" target="_blank"> Live Link </a>
               </button>
               <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/portfolio"> Code Link </a>
+                <a href="https://github.com/Mystic-Mish/portfolio" target="_blank"> Code Link </a>
               </button>
             </div>
           </div>
@@ -256,7 +228,8 @@
 
               <p class="text-primary projects__list-item-text-primary">
                 <span>
-                  A site that contains basic information and links to useful websites for information on web technologies.
+                  A site that contains basic information and links to useful websites for information on web
+                  technologies.
                 </span>
                 <!-- <br />
                   <br /> -->
@@ -265,14 +238,14 @@
                 </span>
               </p>
               <button class="btn btn-theme projects__btn-theme">
-                <a href="https://mystic-mish.github.io/web_tech/"> Live Link </a>
+                <a href="https://mystic-mish.github.io/web_tech/" target="_blank"> Live Link </a>
               </button>
               <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/web_tech"> Code Link </a>
+                <a href="https://github.com/Mystic-Mish/web_tech" target="_blank"> Code Link </a>
               </button>
             </div>
             <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-num"> 3 </span>
               <span class="projects__list-item-count-line"> </span>
               <span class="projects__list-item-count-end-dot"> </span>
             </div>
@@ -294,18 +267,18 @@
           <form class="contact__form">
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" />
+              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" id="from_name" />
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" />
+              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" id="from_email" />
             </div>
             <div class="contact__form-field">
               <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" name="message" id="" cols="30" rows="10"
-                class="contact__form-field-input"></textarea>
+              <textarea placeholder="Enter Your Message" cols="30" rows="10"
+                class="contact__form-field-input" id="from_message"></textarea>
             </div>
-            <button type="submit" class="contact__form-submit">Submit</button>
+            <button type="submit" class="contact__form-submit" onclick="sendMail()">Submit</button>
           </form>
           <div class="contact__form-visual"></div>
         </div>
@@ -347,14 +320,13 @@
     <div class="main-footer__bottom">
       <div class="main-container">
         <p class="main-footer__bottom-txt">
-          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
-          <a target="_blank" href="https://github.com/Mystic-Mish">Mumiak</a> | Web Development Portfolio
+          <a target="_blank" href="https://github.com/Mystic-Mish">Mumiak</a> | Developer Portfolio
           <script>document.write(new Date().getFullYear())</script>
         </p>
       </div>
     </div>
   </footer>
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

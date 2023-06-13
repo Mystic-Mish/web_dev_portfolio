@@ -139,3 +139,17 @@ const headerLogoConatiner = document.querySelector('.main-header__logo-container
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+
+//Sending mail
+function sendMail() {
+  var params = {
+    from_name : document.getElementById("from_name").value,
+    from_email : document.getElementById("from_email").value,
+    from_message : document.getElementById("from_message").value
+  }
+
+  emailjs.send("service_grwwsqq","template_didbnjl",params).then(function (res) {
+    alert("Success! " + res.status);
+  })
+}
