@@ -1,332 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
-  <title>Personal Portfolio</title>
-  <meta name="description" content="Personal Portfolio" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init('u5TY1kMVwQAzSeP74');
-    })();
-  </script>
+  <title>Mitchel Akoth</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-  <header class="main-header">
-    <div class="main-header__logo-container">
-      <div class="main-header__logo-img-cont">
-        <img src="assets/profile.png" alt="logo Image" class="main-header__logo-img" />
+<body class="w3-black">
+
+  <!-- Icon Bar (Sidebar - hidden on small screens) -->
+  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" style="background-color: gray;">
+    <!-- Avatar image in top left corner -->
+    <img src="img/profile.png" style="width:100%">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+
+  <!-- Navbar on small screens (Hidden on medium and large screens) -->
+  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    </div>
+  </div>
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+    <!-- Header/Home -->
+    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Mitchel Akoth.</h1>
+      <p>Developer and Designer.</p>
+      <img src="img/profile.png" alt="Profile picture" class="w3-image" width="90" height="90">
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">About Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p>Hello there! I'm Mitchel Akoth, a passionate and multi-talented professional specializing in both web
+        development
+        and graphic design. With a love for technology and an eye for aesthetics, I bring a unique blend of creativity
+        and technical expertise to every project I work on.
+      </p>
+      <p>As a web developer, I have honed my skills in various programming languages and frameworks, including HTML,
+        CSS, JavaScript, and PHP. I strive to create engaging and user-friendly websites that not only look stunning but
+        also provide seamless functionality. From crafting responsive layouts to optimizing website performance, I enjoy
+        the challenge of bringing ideas to life in the digital realm.</p>
+      <p>But my journey doesn't end there. As a graphic designer, I thrive on translating concepts into visually
+        compelling designs. I have a keen understanding of color theory, typography, and composition, which allows me to
+        create captivating graphics for both digital and print media. Whether it's designing logos, brochures, or social
+        media assets, I am committed to delivering visually appealing and impactful designs that resonate with target
+        audiences.</p>
+      <p>But my journey doesn't end there. As a graphic designer, I thrive on translating concepts into visually
+        compelling designs. I have a keen understanding of color theory, typography, and composition, which allows me to
+        create captivating graphics for both digital and print media. Whether it's designing logos, brochures, or social
+        media assets, I am committed to delivering visually appealing and impactful designs that resonate with target
+        audiences.</p>
+      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+      <p class="w3-wide">Web development</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:95%"></div>
       </div>
-      <h4 class="main-header__logo-text">Mitchel Akoth</h4>
-    </div>
-    <nav class="main-header__navigation">
-      <ul class="main-header__navigation-links">
-        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
-        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
-        <li class="main-header__navigation-link">
-          <a href="./index.html#projects"> Projects </a>
-        </li>
-        <li class="main-header__navigation-link"><a href="./index.html#contact"> Contact </a></li>
-      </ul>
-    </nav>
-    <div class="main-header__sm-scr-nav-btn">
-      <div class="main-header__sm-scr-nav-btn-line"></div>
-      <div class="main-header__sm-scr-nav-btn-line"></div>
-    </div>
-    <div class="main-header__sm-menu">
-      <div class="main-header__sm-menu-close">
-
+      <p class="w3-wide">Graphic design</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:85%"></div>
       </div>
-      <ul class="main-header__sm-menu-links">
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
-        </li>
+      <p class="w3-wide">Service delivery</p>
+      <div class="w3-white">
+        <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
 
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
-        </li>
-        <li>
-          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
-  </header>
-
-  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
-  <!--<div class="themeClrSelector">
-    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
-    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
-      class="themeClrSelector__img" />
-  </div>-->
-  <!---->
-
-  <section id="home-hero" class="home-hero">
-    <div class="home-hero__content">
-      <div class="home-hero__info">
-        <h1 class="heading-primary home-hero__heading-primary">
-          <span class="heading-primary__sm"> Hello, welcome.</span>
-          <span class="heading-primary__main">
-            I'm Mitchel Akoth! A Web Developer Building Interractive Websites and WebApps while considering
-            usability,
-            interractivity and maintainability.
-          </span>
-        </h1>
-        <button class="btn btn-theme home-hero__btn-theme"><a href="./index.html#projects">Projects</a></button>
-        <button class="btn btn-inv home-hero__btn-theme"><a href="./index.html#contact">Contact</a></button>
-      </div>
-    </div>
-  </section>
-  <section id="about" class="about main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> About Me</span>
-        <span class="heading-secondary__main">
-          Get To Know Me More.
-      </h2>
-      <div class="main-section__content">
-        <div class="about__info">
-          <div class="about__main-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
-              My Story
-            </h3>
-            <p class="text-primary about__text-primary">
-              <span>
-                I started my programming journey in 2021 and so far I think I can refer to myself as a junior developer.
-              </span>
-              <span>
-                Learning is a continuous process and with the everyday emerging and changing technology I strive to keep
-                myself updated and it has helped to strengthen my grit mindset.
-              </span>
-              <span>
-                Feel free to contact me we work together.
-              </span>
-            </p>
-            <button class="btn btn-theme about__btn-theme"><a href="./index.html#projects"> Projects </a></button>
-          </div>
-          <div class="about__skill-info">
-            <h3 class="heading-quaternary about__heading-quaternary">
-              My Skills
-            </h3>
-            <ul class="about__skills">
-              <li class="about__skill">html</li>
-              <li class="about__skill">css</li>
-              <li class="about__skill">javascript</li>
-              <li class="about__skill">react</li>
-              <li class="about__skill">node</li>
-              <li class="about__skill">git</li>
-              <li class="about__skill">vscode</li>
-              <li class="about__skill">php</li>
-              <li class="about__skill">github</li>
-              <li class="about__skill">bootstrap</li>
-              <li class="about__skill">wordpress</li>
-              <li class="about__skill">joomla</li>
-            </ul>
-          </div>
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">000</span><br>
+          Partners
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">000</span><br>
+          Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">000</span><br>
+          Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+          <span class="w3-xlarge">000</span><br>
+          Meetings
         </div>
       </div>
-    </div>
-  </section>
-  <section id="projects" class="projects main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary projects__heading-secondary">
-        <span class="heading-secondary__sm"> Projects</span>
-        <span class="heading-secondary__main">
-          Some of the projects I have been able to work on!
-        </span>
-      </h2>
-      <div class="main-section__content">
-        <div class="projects__list">
 
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/sports.jpg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Sports Website
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i> <a href="#"> Download Resume </a>
+      </button>
 
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  This a website for the sports department.
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  Technologies used include HTML, CSS and JS.
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a href="https://mystic-mish.github.io/sports-website/" target="_blank"> Live Link </a>
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/sports-website" target="_blank"> Code Link </a>
-              </button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 1 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-          </div>
-          <div class="projects__list-item">
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 2 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/website.jpg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Portfolio Template
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  This is a portfolio template created using react JS.
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  It can be customized to meet any users need regardless of their career line.
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a href="https://portfolio-template-gules-omega.vercel.app/" target="_blank"> Live Link </a>
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/portfolio" target="_blank"> Code Link </a>
-              </button>
-            </div>
-          </div>
-          <div class="projects__list-item projects__list-item--inv">
-            <div class="projects__list-item-details">
-              <div class="projects__list-item-img-cont">
-                <img src="./assets/web.jpg" alt="Project Image" class="projects__list-item-img" />
-              </div>
-              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
-                Web Technology
-              </h3>
-              <!-- <hr class="projects__title-text-divider" /> -->
-
-              <p class="text-primary projects__list-item-text-primary">
-                <span>
-                  A site that contains basic information and links to useful websites for information on web
-                  technologies.
-                </span>
-                <!-- <br />
-                  <br /> -->
-                <span>
-                  More updates coming soon.
-                </span>
-              </p>
-              <button class="btn btn-theme projects__btn-theme">
-                <a href="https://mystic-mish.github.io/web_tech/" target="_blank"> Live Link </a>
-              </button>
-              <button class="btn btn-inv projects__btn-inv">
-                <a href="https://github.com/Mystic-Mish/web_tech" target="_blank"> Code Link </a>
-              </button>
-            </div>
-            <div class="projects__list-item-count">
-              <span class="projects__list-item-count-num"> 3 </span>
-              <span class="projects__list-item-count-line"> </span>
-              <span class="projects__list-item-count-end-dot"> </span>
-            </div>
-          </div>
+      <!-- Grid for pricing tables -->
+      <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Services</li>
+            <li class="w3-padding-16">Web development</li>
+            <li class="w3-padding-16">Graphic design</li>
+            <li class="w3-padding-16">Web hosting</li>
+            <li class="w3-padding-16">Maintenance</li>
+            <li class="w3-padding-16">
+              <h2>$ negotiable</h2>
+              <span class="w3-opacity">per month/year</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="#contact">Contact
+                  us</a></button>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact main-section">
-    <div class="main-container">
-      <h2 class="heading-secondary">
-        <span class="heading-secondary__sm"> Contact </span>
-        <span class="heading-secondary__main">
-          Feel free to Contact me and I will get back to you as soon as possible
-        </span>
-      </h2>
-      <div class="main-section__content">
-        <div class="contact__form-cont">
-          <form class="contact__form">
-            <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Name</label>
-              <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" id="from_name" />
-            </div>
-            <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Email</label>
-              <input placeholder="Enter Your Email" type="text" class="contact__form-field-input" id="from_email" />
-            </div>
-            <div class="contact__form-field">
-              <label for="name" class="contact__form-field-label">Message</label>
-              <textarea placeholder="Enter Your Message" cols="30" rows="10"
-                class="contact__form-field-input" id="from_message"></textarea>
-            </div>
-            <button type="submit" class="contact__form-submit" onclick="sendMail()">Submit</button>
-          </form>
-          <div class="contact__form-visual"></div>
+
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-dark-grey w3-xlarge w3-padding-32">Services</li>
+            <li class="w3-padding-16">Service delivery</li>
+            <li class="w3-padding-16">IT Support</li>
+            <li class="w3-padding-16">Customer service</li>
+            <li class="w3-padding-16">Updates and Upgrades</li>
+            <li class="w3-padding-16">
+              <h2>$ negotiable</h2>
+              <span class="w3-opacity">per month/year</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-button w3-white w3-padding-large w3-hover-black"><a href="#contact">Contact
+                  us</a></button>
+            </li>
+          </ul>
         </div>
+        <!-- End Grid/Pricing tables -->
       </div>
+      <!-- End About Section -->
     </div>
-  </section>
-  <footer class="main-footer">
-    <div class="main-footer__upper">
-      <div class="main-container">
-        <ul class="main-footer__links">
-          <li class="main-footer__link">
-            <a href="./index.html">Home</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#about">About</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#projects">Projects</a>
-          </li>
-          <li class="main-footer__link">
-            <a href="./index.html#contact">Contact</a>
-          </li>
-        </ul>
-        <div class="main-footer__mid-line"></div>
-        <div class="main-footer__socials">
-          <a href="https://github.com/Mystic-Mish" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
-              alt="" class="main-footer__social-link-icon" />
-          </a>
-          <a href="https://ke.linkedin.com/in/mitchel-m-35231524a" class="main-footer__social-link">
-            <img
-              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
-              alt="" class="main-footer__social-link-icon" />
-          </a>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Portfolio</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="#" style="width:100%">
+          <img src="#" style="width:100%">
+          <img src="#" style="width:100%">
         </div>
+
+        <div class="w3-half">
+          <img src="#" style="width:100%">
+          <img src="#" style="width:100%">
+          <img src="#" style="width:100%">
+          <img src="#" style="width:100%">
+        </div>
+        <!-- End photo grid -->
       </div>
+      <!-- End Portfolio Section -->
     </div>
-    <div class="main-footer__bottom">
-      <div class="main-container">
-        <p class="main-footer__bottom-txt">
-          <a target="_blank" href="https://github.com/Mystic-Mish">Mumiak</a> | Developer Portfolio
-          <script>document.write(new Date().getFullYear())</script>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Kenya</p>
+        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +254_________</p>
+        <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: __________@gmail.com</p>
+      </div><br>
+      <p>Let's get in touch. Send me a message:</p>
+
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
         </p>
-      </div>
+      </form>
+      <!-- End Contact Section -->
     </div>
-  </footer>
-  <script src="./js/script.js"></script>
+
+    <!-- Footer -->
+    <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <i class="fa fa-github w3-hover-opacity"></i>
+
+      <p><a href="http://github.com/Mystic-Mish">&copy; Mitchel Akoth | Mumiak</a></p>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+    </footer>
+
+    <!-- END PAGE CONTENT -->
+  </div>
+
 </body>
 
 </html>
